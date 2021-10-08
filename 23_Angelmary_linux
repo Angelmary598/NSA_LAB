@@ -1,0 +1,266 @@
+1: 
+
+$ mkdir FISAT
+$ cd FISAT
+~/FISAT$ mkdir Day1
+~/FISAT$ mkdir Day2
+~/FISAT$ mkdir Day3
+~/FISAT$ cd Day1
+~/FISAT/Day1$ cat > f1
+~/FISAT/Day1$ cat > f2
+~/FISAT/Day1$ cat > f3
+~/FISAT/Day1$ cd ..
+
+
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ cat > m1
+Day 2 was good.
+exam@debian:~/FISAT/Day2$ cat > m2
+Second day of college.
+
+
+~/FISAT/Day2$ cd ..
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ cat > c1
+Day 3 was good.
+exam@debian:~/FISAT/Day3$ cat > c2
+Third day of college.     
+
+Q1: 
+
+~/FISAT/Day3$ cd ..
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ cat m1 m2 > m3
+exam@debian:~/FISAT/Day2$ cat m3
+Day 2 was good.
+Second day of college.
+
+Q2:
+
+~/FISAT/Day2$ cp m3 ~/FISAT/Day3/c3
+exam@debian:~/FISAT/Day2$ cd ..
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ ls
+c1  c2  c3
+exam@debian:~/FISAT/Day3$ cat c3
+Day 2 was good.
+Second day of college.
+
+Q3:
+
+~/FISAT/Day1$ chmod a-rx f1
+exam@debian:~/FISAT/Day1$ ls -al f1
+--w------- 1 exam exam 15 Oct  8 10:18 f1
+
+Q5: 
+
+~$ pwd
+/home/exam
+
+Q4:
+
+$ ps
+    PID TTY          TIME CMD
+   4748 pts/0    00:00:00 bash
+   6558 pts/0    00:00:00 ps
+exam@debian:~$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 164168 10464 ?        Ss   09:37   0:01 /sbin/i
+root           2  0.0  0.0      0     0 ?        S    09:37   0:00 [kthrea
+root           3  0.0  0.0      0     0 ?        I<   09:37   0:00 [rcu_gp
+root           4  0.0  0.0      0     0 ?        I<   09:37   0:00 [rcu_pa
+root           6  0.0  0.0      0     0 ?        I<   09:37   0:00 [kworke
+root           8  0.7  0.0      0     0 ?        D    09:37   0:20 [kworke
+root           9  0.0  0.0      0     0 ?        I<   09:37   0:00 [mm_per
+root          10  0.0  0.0      0     0 ?        S    09:37   0:00 [rcu_ta
+root          11  0.0  0.0      0     0 ?        S    09:37   0:00 [rcu_ta
+root          12  0.0  0.0      0     0 ?        S    09:37   0:00 [ksofti
+root          13  0.0  0.0      0     0 ?        I    09:37   0:02 [rcu_sc
+root          14  0.0  0.0      0     0 ?        S    09:37   0:00 [migrat
+root          15  0.0  0.0      0     0 ?        S    09:37   0:00 [cpuhp/
+root          16  0.0  0.0      0     0 ?        S    09:37   0:00 [cpuhp/
+root          17  0.0  0.0      0     0 ?        S    09:37   0:00 [migrat
+root          18  0.0  0.0      0     0 ?        S    09:37   0:00 [ksofti
+root          20  0.0  0.0      0     0 ?        I<   09:37   0:00 [kworke
+root          21  0.0  0.0      0     0 ?        S    09:37   0:00 [cpuhp/
+root          22  0.0  0.0      0     0 ?        S    09:37   0:00 [migrat
+root          23  0.0  0.0      0     0 ?        S    09:37   0:00 [ksofti
+root          25  0.0  0.0      0     0 ?        I<   09:37   0:00 [kworke
+root          26  0.0  0.0      0     0 ?        S    09:37   0:00 [cpuhp/
+root          27  0.0  0.0      0     0 ?        S    09:37   0:00 [migrat
+root          28  0.0  0.0      0     0 ?        S    09:37   0:00 [ksofti
+root          30  0.0  0.0      0     0 ?        I<   09:37   0:00 [kworke
+root          35  0.0  0.0      0     0 ?        S    09:37   0:00 [kdevtm
+root          36  0.0  0.0      0     0 ?        I<   09:37   0:00 [netns]
+root          37  0.0  0.0      0     0 ?        S    09:37   0:00 [kaudit
+root          40  0.0  0.0      0     0 ?        S    09:37   0:00 [khungt
+root          41  0.0  0.0      0     0 ?        S    09:37   0:00 [oom_re
+root          42  0.0  0.0      0     0 ?        I<   09:37   0:00 [writeb
+root          43  0.0  0.0      0     0 ?        S    09:37   0:00 [kcompa
+root          44  0.0  0.0      0     0 ?        SN   09:37   0:00 [ksmd]
+root          45  0.0  0.0      0     0 ?        SN   09:37   0:00 [khugep
+root          64  0.0  0.0      0     0 ?        I<   09:37   0:00 [kinteg
+root          65  0.0  0.0      0     0 ?        I<   09:37   0:00 [kblock
+root          66  0.0  0.0      0     0 ?        I<   09:37   0:00 [blkcg_
+root          67  0.0  0.0      0     0 ?        I<   09:37   0:00 [edac-p
+root          68  0.0  0.0      0     0 ?        I<   09:37   0:00 [devfre
+root          69  0.0  0.0      0     0 ?        I<   09:37   0:00 [kworke
+root          70  0.0  0.0      0     0 ?        S    09:37   0:00 [kswapd
+root          71  0.0  0.0      0     0 ?        I<   09:37   0:00 [kthrot
+root          72  0.0  0.0      0     0 ?        I<   09:37   0:00 [acpi_t
+root          76  0.0  0.0      0     0 ?        I<   09:37   0:00 [ipv6_a
+root          78  0.0  0.0      0     0 ?        I<   09:37   0:00 [kworke
+root          86  0.0  0.0      0     0 ?        I<   09:37   0:00 [kstrp]
+root          89  0.0  0.0      0     0 ?        I<   09:37   0:00 [zswap-
+root          90  0.0  0.0      0     0 ?        I<   09:37   0:00 [kworke
+root         118  0.0  0.0      0     0 ?        I<   09:37   0:00 [kworke
+root         138  0.0  0.0      0     0 ?        I<   09:37   0:00 [ata_sf
+root         142  0.0  0.0      0     0 ?        S    09:37   0:00 [card0-
+root         143  0.0  0.0      0     0 ?        S    09:37   0:00 [card0-
+root         144  0.0  0.0      0     0 ?        S    09:37   0:00 [scsi_e
+root         145  0.0  0.0      0     0 ?        I<   09:37   0:00 [scsi_t
+root         146  0.0  0.0      0     0 ?        S    09:37   0:00 [scsi_e
+root         147  0.0  0.0      0     0 ?        I<   09:37   0:00 [scsi_t
+root         149  0.0  0.0      0     0 ?        I<   09:37   0:00 [nvkm-d
+root         151  0.0  0.0      0     0 ?        S    09:37   0:00 [scsi_e
+root         152  0.0  0.0      0     0 ?        I<   09:37   0:00 [scsi_t
+root         153  0.0  0.0      0     0 ?        S    09:37   0:00 [scsi_e
+root         154  0.0  0.0      0     0 ?        I<   09:37   0:00 [scsi_t
+root         160  0.0  0.0      0     0 ?        I<   09:37   0:01 [kworke
+root         161  0.0  0.0      0     0 ?        I<   09:37   0:00 [ttm_sw
+root         162  0.0  0.0      0     0 ?        S    09:37   0:00 [card1-
+root         163  0.0  0.0      0     0 ?        S    09:37   0:00 [card1-
+root         164  0.0  0.0      0     0 ?        S    09:37   0:00 [card1-
+root         165  0.0  0.0      0     0 ?        S    09:37   0:00 [card1-
+root         201  0.0  0.0      0     0 ?        S    09:37   0:00 [jbd2/s
+root         202  0.0  0.0      0     0 ?        I<   09:37   0:00 [ext4-r
+root         243  0.0  0.7  99684 61736 ?        Ss   09:37   0:00 /lib/sy
+root         272  0.0  0.0  24624  7640 ?        Ss   09:37   0:00 /lib/sy
+root         337  0.0  0.0      0     0 ?        S    09:37   0:00 [irq/31
+root         349  0.0  0.0      0     0 ?        S    09:37   0:00 [watchd
+root         405  0.0  0.0      0     0 ?        I<   09:37   0:00 [cryptd
+systemd+     476  0.0  0.0  88508  6148 ?        Ssl  09:37   0:00 /lib/sy
+root         479  0.0  0.0 236396  7528 ?        Ssl  09:37   0:00 /usr/li
+avahi        481  0.3  0.0   9752  6264 ?        Ss   09:37   0:09 avahi-d
+root         482  0.0  0.0   6684  2800 ?        Ss   09:37   0:00 /usr/sb
+message+     483  0.0  0.0   9788  6196 ?        Ss   09:37   0:02 /usr/bi
+root         484  3.0  0.2 254652 17128 ?        Ssl  09:37   1:25 /usr/sb
+root         486  0.1  0.1 236028  9920 ?        Ssl  09:37   0:03 /usr/li
+root         487  0.0  0.0 220740  4236 ?        Ssl  09:37   0:00 /usr/sb
+root         488  0.0  0.0 232780  7716 ?        Ssl  09:37   0:00 /usr/li
+root         489  0.0  0.0 767704  7424 ?        Ss   09:37   0:00 /lib/sy
+root         490  0.0  0.1 393836 13272 ?        Ssl  09:37   0:00 /usr/li
+root         492  0.0  0.0  14560  5276 ?        Ss   09:37   0:00 /sbin/w
+avahi        498  0.0  0.0   7092   348 ?        S    09:37   0:00 avahi-d
+root         555  0.0  0.1 241048 10656 ?        Ssl  09:37   0:00 /usr/sb
+mongodb      561  0.2  1.4 1494624 118820 ?      Ssl  09:37   0:06 /usr/bi
+root         564  0.0  0.2 118720 23580 ?        Ssl  09:37   0:00 /usr/bi
+root         597  0.0  0.1 239628  8612 ?        Ssl  09:37   0:00 /usr/sb
+mysql        651  0.0  1.2 1410704 102660 ?      Ssl  09:37   0:00 /usr/sb
+postgres     686  0.0  0.3 213236 28156 ?        Ss   09:37   0:00 /usr/li
+root         700  0.0  0.2 200388 21080 ?        Ss   09:37   0:00 /usr/sb
+postgres     706  0.0  0.0 213336  6148 ?        Ss   09:37   0:00 postgre
+postgres     707  0.0  0.0 213236  5680 ?        Ss   09:37   0:00 postgre
+postgres     708  0.0  0.1 213236  9892 ?        Ss   09:37   0:00 postgre
+postgres     709  0.0  0.1 213772  8436 ?        Ss   09:37   0:00 postgre
+postgres     710  0.0  0.0  67592  4872 ?        Ss   09:37   0:00 postgre
+postgres     711  0.0  0.0 213792  6756 ?        Ss   09:37   0:00 postgre
+www-data     733  0.0  0.2 203092 17956 ?        S    09:37   0:00 /usr/sb
+www-data     734  0.0  0.2 203092 17996 ?        S    09:37   0:00 /usr/sb
+www-data     735  0.0  0.2 203092 17912 ?        S    09:37   0:00 /usr/sb
+www-data     736  0.0  0.2 203092 17924 ?        S    09:37   0:00 /usr/sb
+www-data     737  0.0  0.2 203092 18012 ?        S    09:37   0:00 /usr/sb
+rtkit        740  0.0  0.0 153692  3004 ?        SNsl 09:37   0:00 /usr/li
+Debian-+    1091  0.0  0.0  18668  4708 ?        Ss   09:38   0:00 /usr/sb
+root        1133  0.0  0.1 247064  8436 ?        Ssl  09:38   0:00 /usr/li
+root        1260  0.9  0.6 438360 54248 ?        Ssl  09:38   0:26 /usr/li
+colord      1407  0.0  0.1 243024 13492 ?        Ssl  09:38   0:00 /usr/li
+root        1981  0.0  0.3 380924 28604 ?        Ssl  09:38   0:00 /usr/li
+www-data    2440  0.0  0.2 203092 18044 ?        S    09:38   0:00 /usr/sb
+www-data    2904  0.0  0.2 203044 17164 ?        S    09:44   0:00 /usr/sb
+root        2998  0.0  0.0   5784  1632 tty2     Ss+  09:45   0:00 /sbin/a
+root        3001  0.0  0.0      0     0 ?        I    09:45   0:00 [kworke
+root        3356  0.0  0.0      0     0 ?        I    09:46   0:00 [kworke
+root        3383  0.0  0.1 166620 10056 ?        Sl   09:48   0:00 gdm-ses
+exam        3388  0.0  0.1  15772  9460 ?        Ss   09:49   0:00 /lib/sy
+exam        3389  0.0  0.0 167172  3008 ?        S    09:49   0:00 (sd-pam
+exam        3408  0.0  0.0  90460  5512 ?        S<sl 09:49   0:00 /usr/bi
+exam        3409  0.0  0.3 1156168 26952 ?       S<sl 09:49   0:00 /usr/bi
+exam        3411  0.0  0.3 509528 26752 ?        SNsl 09:49   0:00 /usr/li
+exam        3415  0.0  0.0   9420  5872 ?        Ss   09:49   0:00 /usr/bi
+exam        3420  0.0  0.0 237348  6252 ?        Sl   09:49   0:00 /usr/bi
+exam        3435  0.0  0.0  85300  6452 ?        S<l  09:49   0:00 /usr/bi
+exam        3436  0.0  0.0 236908  7812 ?        Ssl  09:49   0:00 /usr/li
+exam        3441  0.0  0.1 379924  8352 ?        Sl   09:49   0:00 /usr/li
+exam        3449  0.0  0.1 349056 12024 ?        Ssl  09:49   0:00 /usr/li
+exam        3455  0.0  0.0 232872  6012 ?        Ssl  09:49   0:00 /usr/li
+exam        3459  0.0  0.0 311556  7704 ?        Ssl  09:49   0:00 /usr/li
+exam        3464  0.0  0.1 235240  9212 ?        Ssl  09:49   0:00 /usr/li
+exam        3468  0.0  0.0 233064  5856 ?        Ssl  09:49   0:00 /usr/li
+exam        3472  0.0  0.4 547804 39924 ?        Sl   09:49   0:00 /usr/li
+exam        3480  0.0  0.1 311920  8820 ?        Sl   09:49   0:00 /usr/li
+exam        3489  0.0  0.0 158836  7732 tty3     Ssl+ 09:49   0:00 /usr/li
+exam        3492  0.0  0.1 297996 15884 tty3     Sl+  09:49   0:00 /usr/li
+exam        3542  0.0  0.0  88176  4416 ?        Ssl  09:49   0:00 /usr/li
+exam        3543  0.0  0.0   5964  3900 ?        Ss   09:49   0:00 ssh-age
+exam        3547  0.0  0.2 519728 17348 ?        Ssl  09:49   0:00 /usr/li
+exam        3563  0.0  0.0 307284  6396 ?        Sl   09:49   0:00 /usr/li
+exam        3564  0.9  2.6 5062896 211772 ?      Rsl  09:49   0:20 /usr/bi
+exam        3572  0.0  0.0   8172  4472 ?        S    09:49   0:00 /usr/bi
+exam        3590  0.3  0.8 1370760 68340 ?       Sl   09:49   0:07 /usr/bi
+exam        3610  0.0  0.0 232788  4584 ?        Ssl  09:49   0:00 /usr/li
+exam        3615  0.0  0.2 580892 19688 ?        Sl   09:49   0:00 /usr/li
+exam        3621  0.0  0.3 392808 27124 ?        Ssl  09:49   0:00 /usr/li
+exam        3628  0.0  0.4 849212 33764 ?        Ssl  09:49   0:00 /usr/li
+exam        3633  0.0  0.0 156012  5500 ?        Sl   09:49   0:00 /usr/li
+exam        3648  0.0  0.3 668124 30304 ?        Ssl  09:49   0:00 /usr/li
+exam        3661  0.0  0.3 2735516 29496 ?       Sl   09:49   0:00 /usr/bi
+exam        3662  0.0  0.0 165668  6904 ?        Sl   09:49   0:00 /usr/li
+exam        3673  0.0  0.1 306852  8388 ?        Ssl  09:49   0:00 /usr/li
+exam        3674  0.0  0.3 535708 26600 ?        Ssl  09:49   0:00 /usr/li
+exam        3677  0.0  0.2 376132 18256 ?        Ssl  09:49   0:00 /usr/li
+exam        3682  0.0  0.0 308860  7092 ?        Ssl  09:49   0:00 /usr/li
+exam        3686  0.0  0.2 341912 22132 ?        Ssl  09:49   0:00 /usr/li
+exam        3689  0.0  0.3 791808 29476 ?        Ssl  09:49   0:00 /usr/li
+exam        3694  0.0  0.3 450228 26816 ?        Ssl  09:49   0:00 /usr/li
+exam        3695  0.0  0.1 320192 10676 ?        Ssl  09:49   0:00 /usr/li
+exam        3698  0.0  0.0 454268  7944 ?        Ssl  09:49   0:00 /usr/li
+exam        3699  0.0  0.0 232700  5700 ?        Ssl  09:49   0:00 /usr/li
+exam        3700  0.0  0.1 462192  9608 ?        Ssl  09:49   0:00 /usr/li
+exam        3701  0.0  0.1 386252 12184 ?        Ssl  09:49   0:00 /usr/li
+exam        3702  0.0  0.8 657952 71032 ?        Sl   09:49   0:00 /usr/li
+exam        3703  0.0  0.1 319496 11728 ?        Ssl  09:49   0:00 /usr/li
+exam        3705  0.0  0.1 455828  8968 ?        Ssl  09:49   0:00 /usr/li
+exam        3706  0.0  0.3 342320 26396 ?        Ssl  09:49   0:00 /usr/li
+exam        3716  0.9  1.1 1122464 90632 ?       Sl   09:49   0:20 /usr/bi
+exam        3732  0.0  0.0 231792  5960 ?        Sl   09:49   0:00 /usr/li
+exam        3766  0.0  0.1 344808 15124 ?        Sl   09:49   0:00 /usr/li
+exam        3861  0.3  0.1 311076 11208 ?        Sl   09:49   0:06 ibus-da
+exam        3863  0.0  0.7 777376 57380 ?        Ssl  09:49   0:00 /usr/li
+exam        3872  0.0  0.0 233724  7100 ?        Sl   09:49   0:00 /usr/li
+exam        3873  0.1  0.3 345912 26360 ?        Sl   09:49   0:02 /usr/li
+exam        3876  0.1  0.6 629420 55820 ?        Sl   09:49   0:02 /usr/li
+exam        3877  0.0  0.0 159444  6112 ?        Ssl  09:49   0:00 /usr/li
+exam        3881  0.0  0.1 233576  8264 ?        Sl   09:49   0:00 /usr/li
+exam        3904  0.0  0.1 159900  8976 ?        Sl   09:49   0:01 /usr/li
+exam        4607  0.0  0.7 857700 58312 ?        Sl   09:52   0:00 /usr/bi
+exam        4612  0.0  0.4 463176 37968 ?        SLl  09:52   0:00 /usr/bi
+exam        4629  0.2  0.5 401752 47312 ?        Ssl  09:52   0:04 /usr/li
+exam        4659  0.0  0.0 310880  7632 ?        Sl   09:52   0:00 /usr/li
+exam        4748  0.0  0.0   8116  4904 pts/0    Ss   09:52   0:00 bash
+exam        4753  0.0  0.0 310640  7032 ?        Sl   09:52   0:00 /usr/li
+root        5010  0.7  0.0      0     0 ?        I    09:58   0:10 [kworke
+root        5125  0.0  0.0      0     0 ?        I    10:01   0:00 [kworke
+root        5563  0.0  0.0      0     0 ?        I    10:08   0:00 [kworke
+root        5818  0.2  0.0      0     0 ?        I    10:11   0:01 [kworke
+root        6039  0.0  0.0      0     0 ?        I    10:14   0:00 [kworke
+root        6044  0.0  0.0      0     0 ?        I    10:14   0:00 [kworke
+root        6142  0.0  0.0      0     0 ?        I    10:15   0:00 [kworke
+root        6321  0.0  0.0      0     0 ?        I    10:18   0:00 [kworke
+root        6326  0.8  0.0      0     0 ?        I    10:18   0:03 [kworke
+root        6394  0.0  0.0      0     0 ?        I    10:20   0:00 [kworke
+root        6433  0.0  0.0      0     0 ?        I    10:21   0:00 [kworke
+root        6468  0.0  0.0      0     0 ?        I    10:22   0:00 [kworke
+exam        6559  0.0  0.0   9700  3232 pts/0    R+
+
+
